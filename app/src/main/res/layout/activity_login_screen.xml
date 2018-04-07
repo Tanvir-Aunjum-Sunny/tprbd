@@ -55,7 +55,6 @@
                 android:drawableLeft="@drawable/ic_lock24dp"
                 android:drawablePadding="16dp"
                 android:hint="Password"
-                android:inputType="numberPassword"
                 android:textColorHint="#d2d2d2" />
         </TableRow>
 

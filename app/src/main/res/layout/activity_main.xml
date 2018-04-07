@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1B3821"
+    android:padding="5dp"
     tools:context="com.tpr.andromeda.teenpattireseller.MainActivity">
 
     <TextView
@@ -35,6 +36,7 @@
         android:layout_centerHorizontal="true"
         android:text="Your Current Bank Balance:"/>
     <TextView
+        android:id="@+id/tvCurrentCreditAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0 cr"
@@ -163,17 +165,14 @@
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/one"
         android:layout_alignLeft="@+id/one"
-        android:text="Player Id:" />
+        android:text="Player Id: " />
 
     <TextView
-        android:id="@+id/playeridno"
+        android:id="@+id/tvPlayerId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/one"
-        android:layout_alignRight="@+id/one"
+        android:layout_toRightOf="@id/etPlayerId"
+        android:layout_toEndOf="@id/etPlayerId"
         android:layout_alignParentBottom="true"
         android:text="ta007" />
-
-
-
 </RelativeLayout>
