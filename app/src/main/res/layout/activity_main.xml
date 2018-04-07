@@ -159,7 +159,7 @@
         android:text="tpg reseller 2018-2020" />
 
     <TextView
-        android:id="@+id/etPlayerId"
+        android:id="@+id/etReceiverId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -171,8 +171,8 @@
         android:id="@+id/tvPlayerId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/etPlayerId"
-        android:layout_toEndOf="@id/etPlayerId"
+        android:layout_toRightOf="@id/etReceiverId"
+        android:layout_toEndOf="@id/etReceiverId"
         android:layout_alignParentBottom="true"
         android:text="ta007" />
 </RelativeLayout>

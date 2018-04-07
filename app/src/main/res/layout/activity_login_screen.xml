@@ -35,7 +35,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etPlayerId"
+                android:id="@+id/etReceiverId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_grade_black_24dp"
@@ -54,6 +54,7 @@
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_lock24dp"
                 android:drawablePadding="16dp"
+                android:inputType="textPassword"
                 android:hint="Password"
                 android:textColorHint="#d2d2d2" />
         </TableRow>

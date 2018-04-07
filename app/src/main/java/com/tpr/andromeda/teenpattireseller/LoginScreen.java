@@ -33,7 +33,7 @@ public class LoginScreen extends AppCompatActivity {
 
         db = FirebaseFirestore.getInstance();
 
-        playerId = findViewById(R.id.etPlayerId);
+        playerId = findViewById(R.id.etReceiverId);
         userPass = findViewById(R.id.etUserPass);
         Button loginBtn = findViewById(R.id.btnLogin);
 
