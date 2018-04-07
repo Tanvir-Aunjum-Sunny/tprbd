@@ -157,7 +157,7 @@
         android:text="tpg reseller 2018-2020" />
 
     <TextView
-        android:id="@+id/playerid"
+        android:id="@+id/etPlayerId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
