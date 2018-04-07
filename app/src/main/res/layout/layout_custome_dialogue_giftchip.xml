@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B3821"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:background="#000000"
+            android:id="@+id/tVgiftChips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="How Many CR You Want To Gift?"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/eTgiftChips"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:padding="15dp" />
+
+        <requestFocus />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first"
+        android:orientation="vertical">
+
+        <TextView
+            android:background="#000000"
+            android:id="@+id/tVplayerId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Enter Player Id You Want To Gift CR"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/eTplayerId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:padding="15dp" />
+
+        <requestFocus />
+    </LinearLayout>
+
+
+    <!-- first row of the table layout-->
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1068982816389",
+    "firebase_url": "https://teenpattireseller.firebaseio.com",
+    "project_id": "teenpattireseller",
+    "storage_bucket": "teenpattireseller.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068982816389:android:64806945c973601a",
+        "android_client_info": {
+          "package_name": "com.tpr.andromeda.teenpattireseller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068982816389-hn22430fsmm4b8u245th2vaeesrishfu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tpr.andromeda.teenpattireseller",
+            "certificate_hash": "b4abf13946fde66d9878bea0a074c74805bd8e7f"
+          }
+        },
+        {
+          "client_id": "1068982816389-dbheb89n264brrd067q7221va90ikcbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSaBlFNZKRSGoIKPoxi0IzjHahTqidAng"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068982816389-dbheb89n264brrd067q7221va90ikcbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

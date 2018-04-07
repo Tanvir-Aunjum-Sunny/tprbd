@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simpleTableLayout"
+    android:layout_width="match_parent"
+    android:background="#1B3821"
+    android:gravity="center"
+    android:layout_height="match_parent"><!-- collapse the first column of the table row-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/firstRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Add elements/columns in the first row-->
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/recevierId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="18dip"
+                android:text="Receiver Id"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/Chips"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:textAlignment="center"
+                android:padding="18dip"
+                android:text="Chips Sent"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:background="#ffffff"
+                android:padding="18dip"
+                android:text="Total Price"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/dateTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:background="#ffffff"
+                android:padding="18dip"
+                android:text="Date n Time"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+        </TableRow>
+
+    </TableLayout>
+    <!-- first row of the table layout-->
+
+</ScrollView>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B3821"
+    tools:context="com.tpr.andromeda.teenpattireseller.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:id="@+id/middletag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="TPG Reseller"/>
+
+    <TextView
+        android:onClick="logoutclicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_alignParentRight="true" />
+
+
+    <TextView
+        android:id="@+id/currentbank"
+        android:layout_below="@+id/middletag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Your Current Bank Balance:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 cr"
+        android:layout_below="@+id/middletag"
+        android:layout_toRightOf="@id/currentbank"/>
+
+
+    <TextView
+        android:id="@+id/crtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/three"
+        android:text="10-100Cr" />
+
+    <ImageView
+        android:id="@+id/three"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/two"
+        android:src="@drawable/left" />
+
+    <TextView
+        android:id="@+id/withdrawchips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/three"
+        android:layout_centerHorizontal="true"
+        android:text="Withdraw Chips" />
+
+    <ImageView
+        android:id="@+id/two"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/middle" />
+
+    <TextView
+        android:id="@+id/giftchips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/crtext"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Gift Chips" />
+
+    <ImageView
+        android:id="@+id/one"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/three"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:src="@drawable/right" />
+
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="74dp"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#a4c639"
+            android:text="Buy Chips" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#a4c639"
+            android:text="Withdraw Chips" />
+
+        <Button
+            android:onClick="giftChipsbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#a4c639"
+            android:text="Gift Chips" />
+    </LinearLayout>
+
+
+    <TextView
+        android:onClick="bankHistoryClicked"
+        android:id="@+id/bankhistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="Bank History" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bankhistory"
+        android:layout_centerHorizontal="true"
+        android:text="tpg reseller 2018-2020" />
+
+    <TextView
+        android:id="@+id/playerid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/one"
+        android:layout_alignLeft="@+id/one"
+        android:text="Player Id:" />
+
+    <TextView
+        android:id="@+id/playeridno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/one"
+        android:layout_alignRight="@+id/one"
+        android:layout_alignParentBottom="true"
+        android:text="ta007" />
+
+
+
+</RelativeLayout>

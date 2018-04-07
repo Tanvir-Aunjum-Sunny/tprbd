@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B3821"
+    tools:context="com.tpr.andromeda.teenpattireseller.RegisterScreen">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <LinearLayout
+            android:id="@+id/lrlogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView_logo"
+                android:layout_width="100sp"
+                android:layout_height="90sp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_rseller" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please Create An Account"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usernamelr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lrlogo">
+
+            <EditText
+                android:id="@+id/etusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_user24dp"
+                android:drawablePadding="16dp"
+                android:inputType="text"
+                android:hint="Enter Your Full Name"
+                android:textColorHint="#d2d2d2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/playeridlr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernamelr">
+
+            <EditText
+                android:id="@+id/etplayerid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_grade_black_24dp"
+                android:drawablePadding="16dp"
+                android:hint="Enter Your Player Id"
+                android:textColorHint="#d2d2d2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phonelr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/playeridlr">
+
+            <EditText
+                android:id="@+id/etphoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_phone24dp"
+                android:drawablePadding="16dp"
+                android:inputType="phone"
+                android:hint="Enter Your Mobile No"
+                android:textColorHint="#d2d2d2" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/crlr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phonelr">
+
+            <EditText
+                android:id="@+id/etcramount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_money_24dp"
+                android:drawablePadding="16dp"
+                android:inputType="number"
+                android:hint="Enter Total CR You Have"
+                android:textColorHint="#d2d2d2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passwordlr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phonelr">
+
+            <EditText
+                android:id="@+id/etpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_lock24dp"
+                android:drawablePadding="16dp"
+                android:hint="Enter Your Password"
+                android:inputType="numberPassword"
+                android:textColorHint="#d2d2d2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/confirmpasswordlr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordlr">
+
+            <EditText
+                android:id="@+id/etconfirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_lock24dp"
+                android:drawablePadding="16dp"
+                android:inputType="numberPassword"
+                android:hint="Please Confirm Your Password"
+                android:textColorHint="#d2d2d2" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/registerbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirmpasswordlr"
+            android:layout_margin="10dp"
+            android:background="#66BB6A"
+            android:onClick="regbtn"
+            android:padding="5dp"
+            android:text="Register"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already Has An Account?" />
+
+            <TextView
+                android:id="@+id/etlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login Now"
+                android:textColor="#f44336" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registerbtn"
+            android:layout_margin="10dp"
+            android:background="#FF5722"
+            android:onClick="logbtn"
+            android:padding="5dp"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+    </TableLayout>
+</ScrollView>
